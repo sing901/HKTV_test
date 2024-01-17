@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Fee Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Shipping Fee Calculator</h1>
+    <form id="shippingForm">
+        <div class="form-group">
+            <label for="length">Length (cm):</label>
+            <input type="number" id="length" name="length" required>
+        </div>
+        <div class="form-group">
+            <label for="width">Width (cm):</label>
+            <input type="number" id="width" name="width" required>
+        </div>
+        <div class="form-group">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required>
+        </div>
+        <div class="form-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+        </div>
+        <div class="form-group">
+            <label for="temperatureCondition">Temperature Condition:</label>
+            <select id="temperatureCondition" name="temperatureCondition" required>
+                <option value="Chill">Chill</option>
+                <option value="Normal">Normal</option>
+                <option value="Freeze">Freeze</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+        </div>
+        <button type="submit">Calculate Shipping Fee</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
